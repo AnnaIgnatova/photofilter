@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Photofilter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="filters-wrapper">
+          <div class="title-wrapper">
+            <img src="img/camera-icon.png" alt="camera" class="title-icon" />
+            <h2 class="filters-title">Photofilter</h2>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Color</span>
+            <input
+              class="input-color"
+              type="color"
+              value="#342849"
+              data-sizing=""
+              data-filter="color"
+            />
+            <label class="input-label" for="input-color">#342849</label>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Size</span>
+            <input
+              min="100"
+              max="700"
+              step="1"
+              value="700"
+              class="input-size"
+              type="range"
+              data-sizing="px"
+              data-filter="size"
+            />
+            <label class="input-label" for="input-size">700px</label>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Blur</span>
+            <input
+              class="input-blur"
+              min="0"
+              max="10"
+              step="1"
+              value="0"
+              type="range"
+              data-sizing="px"
+              data-filter="blur"
+            />
+            <label class="input-label" for="input-blur">0px</label>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Inversion</span>
+            <input
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+              class="input-inversion"
+              type="range"
+              data-sizing="%"
+              data-filter="invert"
+            />
+            <label class="input-label" for="input-inversion">0%</label>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Sepia</span>
+            <input
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+              class="input-sepia"
+              type="range"
+              data-sizing="%"
+              data-filter="sepia"
+            />
+            <label class="input-label" for="input-sepia">0%</label>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Saturation</span>
+            <input
+              min="0"
+              max="200"
+              step="1"
+              value="100"
+              class="input-saturation"
+              type="range"
+              data-sizing="%"
+              data-filter="saturate"
+            />
+            <label class="input-label" for="input-saturation">100%</label>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Shade</span>
+            <input
+              min="0"
+              max="15"
+              step="1"
+              value="3"
+              class="input-shade"
+              type="range"
+              data-sizing="px"
+              data-filter="shadow"
+            />
+            <label class="input-label" for="input-shade">3px</label>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Contrast</span>
+            <input
+              min="0"
+              max="200"
+              step="1"
+              value="100"
+              class="input-contrast"
+              type="range"
+              data-sizing="%"
+              data-filter="contrast"
+            />
+            <label class="input-label" for="input-contrast">100%</label>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Brightness</span>
+            <input
+              min="0"
+              max="200"
+              step="1"
+              value="100"
+              class="input-brightness"
+              type="range"
+              data-sizing="%"
+              data-filter="brightness"
+            />
+            <label class="input-label" for="input-brightness">100%</label>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-name">Hue Rotate</span>
+            <input
+              min="-180"
+              max="180"
+              step="1"
+              value="0"
+              class="input-hue"
+              type="range"
+              data-sizing="deg"
+              data-filter="hue"
+            />
+            <label class="input-label" for="input-hue">0deg</label>
+          </div>
+          <div class="buttons-wrapper">
+            <button class="button reset-button">Reset</button>
+            <button class="button next-button">Next</button>
+          </div>
+        </div>
+        <div class="img-wrapper">
+          <div class="main-img-wrapper">
+            <div class="main-img"></div>
+          </div>
+          <div class="filters-img">
+            <div class="small-img-wrapper">
+              <div class="filter-img filter_1977"></div>
+              <span class="filter-title">1977</span>
+            </div>
+            <div class="small-img-wrapper">
+              <div class="filter-img filter_brannan"></div>
+              <span class="filter-title">Brannan</span>
+            </div>
+            <div class="small-img-wrapper">
+              <div class="filter-img filter_lark"></div>
+              <span class="filter-title">Lark</span>
+            </div>
+            <div class="small-img-wrapper">
+              <div class="filter-img filter_lofi"></div>
+              <span class="filter-title">Lofi</span>
+            </div>
+            <div class="small-img-wrapper">
+              <div class="filter-img filter_reyes"></div>
+              <span class="filter-title">Reyes</span>
+            </div>
+            <div class="small-img-wrapper">
+              <div class="filter-img filter_skyline"></div>
+              <span class="filter-title">Skyline</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
